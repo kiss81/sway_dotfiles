@@ -6,7 +6,7 @@ MACHINE="T14SG3"
 
 #mainline kernel & amdgpu
 sudo add-apt-repository ppa:cappelikan/ppa
-sudo add-apt-repository ppa:oibaf/graphics-drivers
+#sudo add-apt-repository ppa:oibaf/graphics-drivers breaks now
 
 sudo apt update; sudo apt dist-upgrade -y
 
@@ -73,10 +73,6 @@ cd ~/
 git clone https://github.com/woodruffw/ff2mpv
 cd ff2mpv
 ./install.sh
-
-#mainline kernel & amdgpu
-sudo add-apt-repository ppa:cappelikan/ppa
-sudo add-apt-repository ppa:oibaf/graphics-drivers
 
 #clean apt cache dir
 sudo apt-get -y autoremove --purge
